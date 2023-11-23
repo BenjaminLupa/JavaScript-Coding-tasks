@@ -8,8 +8,9 @@ console.log(welcomeMsg("Marc"));
 // Welcome Marc!
 
 function welcomeMsg(name) {
-  return "Welcome " + name;
+  return "Welcome " + name + "!";
 }
+//return`Welcome ${name}!`;
 
 //02) Gross Price Function
 // TODO: implement calcGrossPrice function

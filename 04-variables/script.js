@@ -28,6 +28,6 @@ console.log(isString(""));
 console.log(isString("John" + "Doe"));
 // result should be true
 
-function isString(value) {
+const isString = function (value) {
   return typeof value === "string";
-}
+};
