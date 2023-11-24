@@ -37,7 +37,7 @@ console.log(oddEven(10));
 
 //03) oldYoung function
 function oldYoung(age) {
-  if (age >= 0) {
+  if (typeof age === "number" && age >= 0) {
     if (age < 16) {
       return "children";
     } else if (age < 50) {
@@ -45,9 +45,8 @@ function oldYoung(age) {
     } else {
       return "elder person";
     }
-  } else {
-    return "invalid parameter";
   }
+  return "invalid parameter";
 }
 
 console.log(oldYoung(27));
